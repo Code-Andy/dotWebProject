@@ -1,29 +1,115 @@
-<html lang="en">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Firebase test</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,900italic,900,700italic,700,600italic,600,400italic,300italic,300,200italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="libraries/p5.min.js" defer></script>
     <script src="libraries/p5.sound.min.js" defer></script>
   </head>
   <body>
-    
-    <h1>Input Values</h1>
-    <div class = "container">
-      <form id = 'add'>
-        <input type="number" id="val1" required min="-10" max="10">
-        <input type="number" id="val2" required min="-10" max="10">
-        <input type="submit" value="Submit">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <div class="container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div id="homePage">
+      <div id="googleLogo">
+        <img src="pictures/googleLogo.png" />
+      </div>
+      <div id="startContainer">
+        <h1 id="welcome">Hello</h1>
+      </div>
+    </div>
+
+    <div id="questionPage">
+      <div id="tiltWrapper">
+        <div id="qWrapper">
+          <h1
+            id="questionText"
+            data-tilt
+            data-tilt-max="3"
+            data-tilt-reverse="True"
+            data-tilt-reset="False"
+            data-tilt-mouse-event-element="#questionPage"
+            data-tilt-transition="True"
+            data-tilt-easing="cubic-bezier(.03,.98,.52,.99)"
+          >
+            Have you been facing big changes in regards to your everyday life
+            (ex. new school)?
+          </h1>
+          <div>
+            <button id="yes">Yes</button>
+            <button id="no">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="aboutPage">
+      <h1 class="aboutText">The Purpose</h1>
+      <p class="aboutText">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec justo
+        velit, vestibulum vitae dapibus facilisis, viverra a odio. Nam in elit
+        consectetur, venenatis urna quis, viverra lectus. Donec a mi consequat,
+        placerat purus quis, porttitor odio. Sed vehicula purus sit amet
+        molestie hendrerit. Vivamus sollicitudin suscipit dolor bibendum
+        venenatis. In id eros quis ipsum dapibus malesuada. Nulla maximus augue
+        ac aliquet interdum. Proin odio lorem, bibendum id sodales et, hendrerit
+        in ipsum. Donec tempor nunc in orci porttitor, dignissim cursus metus
+        feugiat.
+      </p>
+    </div>
+
+    <div class="topnav">
+      <div id="dotLogo">
+        <img src="pictures/dotLogo.png" />
+      </div>
+
+      <div id="ourProject">
+        <p>Our Project</p>
+      </div>
+    </div>
+
+    <!-- <h1>Input Values</h1>
+    <div class="container">
+      <form id="add">
+        <input type="number" id="val1" required min="-10" max="10" />
+        <input type="number" id="val2" required min="-10" max="10" />
+        <input type="submit" value="Submit" />
       </form>
     </div>
 
-    <h4 id = 'signIn' onclick='click'>Sign In with Google</h4>
+    <h4 id="signIn" onclick="click">Sign In with Google</h4>-->
     <script src="sketch.js"></script>
-
+    <script type="text/javascript" src="libraries/vanilla-tilt.min.js"></script>
     <script src="bundle.js"></script>
-</script>
-  <body>
+  </body>
 </html>

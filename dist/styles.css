@@ -1,0 +1,277 @@
+/* 
+current vh vw does not work on vertical devices 
+
+use rem or em maybe?
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+#homePage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* border: 2px dashed #f69c55; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#googleLogo {
+  display: none;
+  /* border: 2px dashed #f69c55; */
+  justify-content: center;
+  max-height: 10%;
+  max-width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.3vh;
+}
+
+#startContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 2px dashed #f69c55; */
+}
+
+#startContainer:hover {
+  cursor: crosshair;
+}
+
+#welcome {
+  color: #ffffff;
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 20vh;
+  text-align: center;
+  animation: fadein 1.5s;
+}
+
+#aboutPage {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* border: 2px dashed #f69c55; */
+  justify-content: center;
+  flex-direction: column;
+}
+
+#aboutPage h1 {
+  font-family: "Source Sans Pro";
+  font-weight: 500;
+  font-size: 8vh;
+  text-align: center;
+  animation: fadein 1.5s;
+}
+
+#aboutPage p {
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-size: 2.5vh;
+  text-align: center;
+  animation: fadein 1.5s;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#questionPage {
+  font-family: "Source Serif Pro";
+  font-weight: 400;
+  font-size: 2.6vh;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* border: 2px dashed #f69c55; */
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#tiltWrapper {
+  height: 50vh;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#qWrapper {
+  height: fit-content;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+#qWrapper div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+#qWrapper h1 {
+  text-align: center;
+  padding-bottom: 3vh;
+}
+
+#qWrapper button {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  border-radius: 1vw;
+  border: 0px solid rgba(255, 255, 255, 0.18);
+  padding: 1vh;
+  width: 7vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Source Serif Pro";
+  font-weight: 400;
+  font-size: 3vh;
+  transition: all 0.4s ease 0s;
+}
+
+#qWrapper button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.topnav {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1.5vh;
+  width: 100%;
+}
+
+.topnav p {
+  color: #ffe3df;
+  text-align: center;
+  text-decoration: none;
+  font-size: 3.2vh;
+  font-weight: 600;
+  font-family: "Source Sans Pro";
+}
+
+#ourProject {
+  margin-left: auto;
+  margin-right: 1.1vw;
+}
+
+#ourProject p {
+  transition: all 0.2s ease 0s;
+}
+
+#ourProject p:hover {
+  color: #3a3a3a;
+  cursor: pointer;
+}
+
+#dotLogo {
+  height: 4vh;
+  width: auto;
+  margin-left: 1.1vw;
+  transition: all 0.2s ease 0s;
+}
+
+#dotLogo:hover {
+  filter: hue-rotate(90deg);
+  cursor: pointer;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  transform: translateZ(1px);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  position: absolute;
+  height: auto;
+  width: auto;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.container div {
+  position: absolute;
+  border-radius: 50%;
+  animation: gradient 5s infinite;
+}
+@keyframes gradient {
+  70% {
+    transform: scale(1.2) translate(50px);
+  }
+}
+.container div:nth-child(1) {
+  height: 90%;
+  width: 80%;
+  background-color: #ffffff;
+  left: -20%;
+  top: -10%;
+}
+
+.container div:nth-child(2) {
+  height: 50%;
+  width: 50%;
+  background-color: #d2b1be;
+  bottom: 20%;
+  left: 25%;
+  animation-delay: 1.2s;
+}
+.container div:nth-child(3) {
+  height: 80%;
+  width: 70%;
+  background-color: #6a23e4a3;
+  top: -40%;
+  right: -30%;
+  animation-delay: 2s;
+}
+.container div:nth-child(4) {
+  height: 65%;
+  width: 80%;
+  background-color: #ffe3df;
+  bottom: -15%;
+  right: -20%;
+  animation-delay: 0.3s;
+}
+.container div:nth-child(5) {
+  height: 50%;
+  width: 75%;
+  background-color: #dc4c88aa;
+  bottom: -20%;
+  left: -30%;
+  animation-delay: 1.2s;
+}
+
+.container:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(100px);
+}
