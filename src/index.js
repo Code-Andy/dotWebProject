@@ -61,5 +61,3 @@ function questionPage() {
   document.getElementById("homePage").style.display = "none";
   document.getElementById("questionPage").style.display = "flex";
 }
-
-function yesClick() {}

@@ -1,16 +1,24 @@
-# dotWebProject
+# Dot Web Project
 
-A simple survey webapp
+## HTML, CSS, Vanilla JS
 
-install node
+Demo functionality of login with firebase auth (check console)
 
-ctrl+shift+`
+---
 
-and run
-npm i firebase
-npm webpack webpack-cli -D
-npm run build
-npm init -y
+INCOMPLETE
 
-maybe use npm install vanilla-tilt
-or import vanilla-tilt-min.js (already in folder)
+---
+
+## Build Guide
+
+- Node.js installed
+
+Fork or clone the repository and run in the console (ctrl+shift+`):
+
+> npm i firebase
+> npm i webpack webpack-cli -D
+> npm run build
+
+If you have the "Live Server" extension installed, click "GO LIVE" and enjoy
+Otherwise, run the html file from the folder.
