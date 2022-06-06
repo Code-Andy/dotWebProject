@@ -37,6 +37,13 @@ const provider = new GoogleAuthProvider(); // Attaches a new Google Auth Object
 provider.addScope("https://www.googleapis.com/auth/contacts.readonly"); // Add auth Api
 provider.setCustomParameters({ hd: "@pdsb.net" }); // Restricts to only pdsb.net domains
 
+const user = auth.currentUser;
+
+if (user) {
+  console.log("hello");
+} else {
+}
+
 export function logIn() {
   /**
    * Login function for Google authentication
@@ -57,7 +64,7 @@ export function logIn() {
       const token = credential.accessToken;
       // The signed-in user info.
       const user = result.user;
-      return user;
+      console.log(user);
     })
     .catch((error) => {
       // Handle Errors here.

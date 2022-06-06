@@ -1,6 +1,6 @@
 //npm to setup webpack firebase and tiltjs
 
-import { logIn, loginSuccess } from "./firebase";
+import { logIn } from "./firebase";
 
 let helloToggle = false;
 
@@ -35,8 +35,7 @@ function clickToLogin() {
     fadeElement("welcome");
     helloToggle = true;
   } else {
-    let loginUser = logIn();
-    console.log(loginUser);
+    logIn();
   }
 }
 
